@@ -6,7 +6,8 @@
   gap: var(--spacing);
   align-items: center;
 }
-.about-hero .hero-img { width: min(420px, 100%); object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); }
+.about-hero { background: #fff; }
+.about-hero .hero-img { width: min(420px, 100%); object-fit: cover; border-radius: var(--radius); }
 
 .about-body { padding: clamp(48px, 7vw, 80px) 0; display: grid; gap: 40px; }
 
@@ -20,7 +21,7 @@
   max-width: 520px;
   border-radius: var(--radius);
   overflow: hidden;
-  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
 }
 .about-main-img { width: 100%; height: 100%; object-fit: cover; }
 .about-copy h2 { margin: 0 0 10px; color: var(--primary); }
@@ -36,7 +37,6 @@
   padding: 16px;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.05);
 }
 .mvv-card h3 { margin: 0 0 8px; color: var(--primary); }
 .mvv-card p, .mvv-card li { color: var(--muted); line-height: 1.6; margin: 0 0 6px; }
