@@ -176,7 +176,7 @@ a {
 /* Page hero */
 .page-hero {
 	position: relative;
-	min-height: 54vh;
+	min-height: fit-content;
 	padding: clamp(56px, 9vw, 90px) 0 clamp(38px, 6vw, 64px);
 	background: linear-gradient(135deg, #f7fbf5, #eef4ed);
 	overflow: hidden;
@@ -292,6 +292,6 @@ a {
 
 	.page-hero {
 		padding: 40px 0 32px;
-		min-height: 52vh;
+		min-height: 80vh;
 	}
 }
