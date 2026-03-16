@@ -1,7 +1,7 @@
 /* Gallery */
 
 .gallery-hero {
-  background: linear-gradient(120deg, rgba(47,107,57,0.08), #f8fbf6), url('../assets/gallery/banner/banner-mask-group.png') center/cover no-repeat;
+  background: linear-gradient(120deg, rgba(47,107,57,0.08), #f8fbf6), center/cover no-repeat;
 }
 .gallery-hero .hero-grid {
   display: grid;

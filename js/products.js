@@ -47,10 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <p>${p.description}</p>
         <div class="tag-list">${tags}</div>
         <div class="sizes">${sizes}</div>
-        <div class="links">
-          <a class="btn-product-link" href="${p.link}" target="_blank" rel="noreferrer">Open product link</a>
-          ${p.location ? `<a class="btn-secondary" href="${p.location}" target="_blank" rel="noreferrer">View location</a>` : ''}
-        </div>
+        
       </div>
     `;
   };
@@ -71,9 +68,9 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const fallback = [
-    { id:'flour-50kg', name:'Fortified Wheat Flour 50kg', image:'assets/products/gemini-generated1.png', description:'High-capacity fortified flour milled for bakeries and distributors. Ideal for bread, pastry, and injera blends.', sizes:['50kg','25kg','10kg'], tags:['Fortified','Vitamin B complex','Zinc'], link:'/product/flour-50kg', location:'https://maps.app.goo.gl' },
-    { id:'flour-5kg', name:'Household Fortified Flour 5kg', image:'assets/products/img1.png', description:'Convenient pack for households and small shops; smooth texture for daily cooking and baking.', sizes:['5kg','3kg'], tags:['Fortified','Everyday use'], link:'/product/flour-5kg', location:'https://maps.app.goo.gl' },
-    { id:'bread-fresh', name:'Fresh Bread Loaves', image:'assets/products/img2.png', description:'Daily baked loaves with a soft crumb and thin crust, optimized for shelf life and transport.', sizes:['Single loaf','10-pack'], tags:['Fresh','Soft crumb'], link:'/product/bread-fresh', location:'https://maps.app.goo.gl' }
+    { id: 'flour-50kg', name: 'Fortified Wheat Flour 50kg', image: 'assets/products/gemini-generated1.png', description: 'High-capacity fortified flour milled for bakeries and distributors. Ideal for bread, pastry, and injera blends.', sizes: ['50kg', '25kg', '10kg'], tags: ['Fortified', 'Vitamin B complex', 'Zinc'], link: '/product/flour-50kg', location: 'https://maps.app.goo.gl' },
+    { id: 'flour-5kg', name: 'Household Fortified Flour 5kg', image: 'assets/products/img1.png', description: 'Convenient pack for households and small shops; smooth texture for daily cooking and baking.', sizes: ['5kg', '3kg'], tags: ['Fortified', 'Everyday use'], link: '/product/flour-5kg', location: 'https://maps.app.goo.gl' },
+    { id: 'bread-fresh', name: 'Fresh Bread Loaves', image: 'assets/products/img2.png', description: 'Daily baked loaves with a soft crumb and thin crust, optimized for shelf life and transport.', sizes: ['Single loaf', '10-pack'], tags: ['Fresh', 'Soft crumb'], link: '/product/bread-fresh', location: 'https://maps.app.goo.gl' }
   ];
 
   fetch('data/products.json')
