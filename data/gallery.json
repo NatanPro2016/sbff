@@ -1,0 +1,38 @@
+[
+  {
+    "id": "flour-bags",
+    "image": "assets/section-about-img2.png",
+    "caption": "Fortified flour prepared for shipment",
+    "alt": "Flour bags ready for dispatch"
+  },
+  {
+    "id": "line",
+    "image": "assets/home.png",
+    "caption": "Automated production line in Kaliti",
+    "alt": "Production line"
+  },
+  {
+    "id": "bread",
+    "image": "assets/gallery/featured-products-images/featured-products-img4.png",
+    "caption": "Daily baked loaves cooling",
+    "alt": "Bread loaves"
+  },
+  {
+    "id": "packaging",
+    "image": "assets/gallery/featured-products-images/featured-products-img5.png",
+    "caption": "Quality-checked packaging",
+    "alt": "Packaging line"
+  },
+  {
+    "id": "exterior",
+    "image": "assets/gallery/featured-products-images/featured-products-img.png",
+    "caption": "Sheger facility exterior",
+    "alt": "Facility exterior"
+  },
+  {
+    "id": "team",
+    "image": "assets/gallery/featured-products-group/featured-products-img6.png",
+    "caption": "Team behind the production",
+    "alt": "Team photo"
+  }
+]
