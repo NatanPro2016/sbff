@@ -1,0 +1,32 @@
+[
+  {
+    "id": "flour-50kg",
+    "name": "የተጠናከረ የስንዴ ዱቄት 50ኪ.ግ",
+    "image": "assets/products/gemini-generated1.png",
+    "description": "ለዳቦ ቤቶችና ለአከፋፋዮች የተዘጋጀ ከፍተኛ ጥራት ያለው የተጠናከረ የስንዴ ዱቄት። ለዳቦ፣ ለፓስትሪ እና ለተለያዩ የምግብ አዘገጃጀቶች ተስማሚ ነው።",
+    "sizes": ["50ኪ.ግ", "25ኪ.ግ", "10ኪ.ግ"],
+    "tags": ["የተጠናከረ", "ቫይታሚን B", "ዚንክ"],
+    "link": "/product/flour-50kg",
+    "location": "https://maps.app.goo.gl"
+  },
+  {
+    "id": "flour-5kg",
+    "name": "የቤት አገልግሎት ዱቄት 5ኪ.ግ",
+    "image": "assets/products/img1.png",
+    "description": "ለቤተሰብና ለትንሽ ሱቆች የሚሆን ምቹ መጠን፣ ለዕለታዊ ምግብ አዘገጃጀት እና ለመጋገር ተስማሚ የሆነ ለስላሳ ዱቄት።",
+    "sizes": ["5ኪ.ግ", "3ኪ.ግ"],
+    "tags": ["የተጠናከረ", "ዕለታዊ አጠቃቀም"],
+    "link": "/product/flour-5kg",
+    "location": "https://maps.app.goo.gl"
+  },
+  {
+    "id": "bread-fresh",
+    "name": "ትኩስ ዳቦ",
+    "image": "assets/products/img2.png",
+    "description": "በየቀኑ የሚጋገር ለስላሳ ዳቦ፣ ለመሸጥና ለመጓጓዝ ተስማሚ የሆነ ጥራት ያለው ምርት።",
+    "sizes": ["አንድ ዳቦ", "10 ጥቅል"],
+    "tags": ["ትኩስ", "ለስላሳ"],
+    "link": "/product/bread-fresh",
+    "location": "https://maps.app.goo.gl"
+  }
+]

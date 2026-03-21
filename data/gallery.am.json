@@ -1,0 +1,38 @@
+[
+  {
+    "id": "flour-bags",
+    "image": "assets/gallery/featured-products-images/featured-products-img2.png",
+    "caption": "ለስርጭት የተዘጋጀ የተጠናከረ ዱቄት",
+    "alt": "ለስርጭት የተዘጋጀ የዱቄት ከረጢቶች"
+  },
+  {
+    "id": "line",
+    "image": "assets/gallery/featured-products-images/featured-products-img3.png",
+    "caption": "በቃሊቲ የሚሰራ የዘመናዊ ምርት መስመር",
+    "alt": "የምርት መስመር"
+  },
+  {
+    "id": "bread",
+    "image": "assets/gallery/featured-products-images/featured-products-img4.png",
+    "caption": "በየቀኑ የሚጋገር ዳቦ",
+    "alt": "የተጋገረ ዳቦ"
+  },
+  {
+    "id": "packaging",
+    "image": "assets/gallery/featured-products-images/featured-products-img5.png",
+    "caption": "የጥራት ምርመራ ያለፈ ማሸጊያ",
+    "alt": "የማሸጊያ መስመር"
+  },
+  {
+    "id": "exterior",
+    "image": "assets/gallery/featured-products-images/featured-products-img.png",
+    "caption": "የሸገር ፋብሪካ ውጭ እይታ",
+    "alt": "የፋብሪካ ውጭ እይታ"
+  },
+  {
+    "id": "team",
+    "image": "assets/gallery/featured-products-group/featured-products-img6.png",
+    "caption": "ከምርት ጀርባ ያለው ቡድን",
+    "alt": "የቡድን ፎቶ"
+  }
+]

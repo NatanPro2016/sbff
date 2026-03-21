@@ -2,6 +2,15 @@
 document.addEventListener('DOMContentLoaded', () => {
   const grid = document.getElementById('gallery-grid');
   if (!grid) return;
+  const isAmharic = document.documentElement.lang.toLowerCase().startsWith('am');
+  const basePath = window.location.pathname.includes('/am/') ? '../' : '';
+
+  const resolveAsset = (path) => {
+    if (!path || /^https?:\/\//.test(path) || path.startsWith('/') || path.startsWith('../')) {
+      return path;
+    }
+    return `${basePath}${path}`;
+  };
 
   const fallback = [
     { id: 'flour-bags', image: 'assets/gallery/featured-products-images/featured-products-img2.png', caption: 'Fortified flour prepared for shipment', alt: 'Flour bags ready for dispatch' },
@@ -17,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     items.forEach(item => {
       const fig = document.createElement('figure');
       const img = document.createElement('img');
-      img.src = item.image;
+      img.src = resolveAsset(item.image);
       img.alt = item.alt || item.caption || item.id;
       img.loading = 'lazy';
       const cap = document.createElement('figcaption');
@@ -28,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  fetch('data/gallery.json')
+  fetch(`${basePath}data/${isAmharic ? 'gallery.am.json' : 'gallery.json'}`)
     .then(r => r.json())
     .then(data => Array.isArray(data) && data.length ? data : fallback)
     .catch(() => fallback)

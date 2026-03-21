@@ -4,10 +4,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const listEl = document.querySelector('.product-list');
   const detailEl = document.querySelector('.product-detail');
   const searchEl = document.querySelector('#product-search');
+  const isAmharic = document.documentElement.lang.toLowerCase().startsWith('am');
+  const basePath = window.location.pathname.includes('/am/') ? '../' : '';
 
   let products = [];
   let filtered = [];
   let activeId = null;
+
+  const resolveAsset = (path) => {
+    if (!path || /^https?:\/\//.test(path) || path.startsWith('/') || path.startsWith('../')) {
+      return path;
+    }
+    return `${basePath}${path}`;
+  };
 
   const renderList = () => {
     listEl.innerHTML = '';
@@ -21,12 +30,12 @@ document.addEventListener('DOMContentLoaded', () => {
       li.type = 'button';
       li.dataset.id = p.id;
       li.innerHTML = `
-        <img src="${p.image}" alt="${p.name}" loading="lazy" />
+        <img src="${resolveAsset(p.image)}" alt="${p.name}" loading="lazy" />
         <div class="product-row-text">
           <div class="name">${p.name}</div>
           <div class="muted">${p.sizes.join(', ')}</div>
         </div>
-        <span class="pill">View</span>
+        <span class="pill">${isAmharic ? 'ይመልከቱ' : 'View'}</span>
       `;
       li.addEventListener('click', () => selectProduct(p.id));
       listEl.appendChild(li);
@@ -35,13 +44,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const renderDetail = (p) => {
     if (!p) {
-      detailEl.innerHTML = '<p class="text">Select a product to view details.</p>';
+      detailEl.innerHTML = `<p class="text">${isAmharic ? 'ዝርዝሩን ለማየት ምርት ይምረጡ።' : 'Select a product to view details.'}</p>`;
       return;
     }
     const tags = p.tags?.map(t => `<span class="pill">${t}</span>`).join('') || '';
     const sizes = p.sizes?.map(s => `<span class="size-chip">${s}</span>`).join('') || '';
     detailEl.innerHTML = `
-      <div class="detail-visual"><img src="${p.image}" alt="${p.name}" loading="lazy" /></div>
+      <div class="detail-visual"><img src="${resolveAsset(p.image)}" alt="${p.name}" loading="lazy" /></div>
       <div class="detail-meta">
         <h2>${p.name}</h2>
         <p>${p.description}</p>
@@ -63,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     filtered = products.filter(p => p.name.toLowerCase().includes(q) || p.tags?.some(t => t.toLowerCase().includes(q)));
     renderList();
     if (activeId && !filtered.some(p => p.id === activeId)) {
-      detailEl.innerHTML = '<p class="text">Select a product to view details.</p>';
+      detailEl.innerHTML = `<p class="text">${isAmharic ? 'ዝርዝሩን ለማየት ምርት ይምረጡ።' : 'Select a product to view details.'}</p>`;
     }
   };
 
@@ -73,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { id: 'bread-fresh', name: 'Fresh Bread Loaves', image: 'assets/products/img2.png', description: 'Daily baked loaves with a soft crumb and thin crust, optimized for shelf life and transport.', sizes: ['Single loaf', '10-pack'], tags: ['Fresh', 'Soft crumb'], link: '/product/bread-fresh', location: 'https://maps.app.goo.gl' }
   ];
 
-  fetch('data/products.json')
+  fetch(`${basePath}data/${isAmharic ? 'products.am.json' : 'products.json'}`)
     .then(r => r.json())
     .catch(() => fallback)
     .then(data => {

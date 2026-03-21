@@ -173,6 +173,31 @@ a {
 	background: var(--primary-soft);
 }
 
+.nav-actions {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.lang-switch {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 44px;
+	padding: 10px 12px;
+	border: 1px solid var(--border);
+	border-radius: 999px;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1;
+	color: var(--primary);
+	background: #fff;
+}
+
+.lang-switch:hover {
+	background: var(--primary-soft);
+}
+
 /* Page hero */
 .page-hero {
 	position: relative;
@@ -287,6 +312,11 @@ a {
 	}
 
 	.nav {
+		flex-wrap: wrap;
+	}
+
+	.nav-actions {
+		width: 100%;
 		flex-wrap: wrap;
 	}
 
