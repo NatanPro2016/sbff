@@ -26,14 +26,18 @@ document.addEventListener('DOMContentLoaded', () => {
     items.forEach(item => {
       const fig = document.createElement('figure');
       const img = document.createElement('img');
+      const date = document.createElement('p')
       img.src = resolveAsset(item.image);
       img.alt = item.alt || item.caption || item.id;
       img.loading = 'lazy';
+      date.innerText = item.date
       const cap = document.createElement('figcaption');
       cap.textContent = item.caption || '';
       fig.appendChild(img);
       fig.appendChild(cap);
+      fig.appendChild(date)
       grid.appendChild(fig);
+
     });
   };
 
