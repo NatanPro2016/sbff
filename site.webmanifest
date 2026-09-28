@@ -1,0 +1,15 @@
+{
+  "name": "Sheger Bread & Flour Factory | የሸገር ዳቦ እና ዱቄት ፋብሪካ",
+  "short_name": "Sheger Bread & Flour",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2f6b39",
+  "icons": [
+    {
+      "src": "assets/header-img1.png",
+      "sizes": "170x124",
+      "type": "image/png"
+    }
+  ]
+}

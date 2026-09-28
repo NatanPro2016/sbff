@@ -1,9 +1,9 @@
 [
   {
     "id": "flour-50kg",
-    "name": "Fortified Wheat Flour 50kg",
+    "name": "Sheger Fortified Wheat Flour 50kg (Sheger Duket)",
     "image": "assets/products/gemini-generated1.png",
-    "description": "High-capacity fortified flour milled for bakeries and distributors. Ideal for bread, pastry, and injera blends.",
+    "description": "High-capacity fortified flour milled for bakeries, retail, and injera blends. Ideal for bread, pastry, and high-volume commercial baking.",
     "sizes": [
       "50kg",
       "25kg",
@@ -11,21 +11,27 @@
     ],
     "tags": [
       "Fortified",
+      "Sheger Flour",
+      "Sheger Duket",
+      "shger flour",
       "Vitamin B complex",
       "Zinc"
     ]
   },
   {
     "id": "flour-5kg",
-    "name": "Household Fortified Flour 5kg",
+    "name": "Sheger Household Fortified Flour 5kg (Sheger Duket)",
     "image": "assets/products/product-1.png",
-    "description": "Convenient pack for households and small shops; smooth texture for daily cooking and baking.",
+    "description": "Convenient pack for households and neighborhood shops; smooth texture for daily cooking and traditional baking.",
     "sizes": [
       "5kg",
       "3kg"
     ],
     "tags": [
       "Fortified",
+      "Sheger Flour",
+      "Sheger Duket",
+      "shger flour",
       "Everyday use"
     ],
     "link": "/product/flour-5kg",
@@ -33,15 +39,17 @@
   },
   {
     "id": "bread-fresh",
-    "name": "Fresh Bread Loaves",
+    "name": "Sheger Fresh Bread Loaves (Sheger Dabo)",
     "image": "assets/products/img2.png",
-    "description": "Daily baked loaves with a soft crumb and thin crust, optimized for shelf life and transport.",
+    "description": "Daily baked fresh loaves with a soft crumb and thin crust, optimized for freshness, taste, and long shelf life across Addis Ababa.",
     "sizes": [
       "Single loaf",
       "10-pack"
     ],
     "tags": [
       "Fresh",
+      "Sheger Bread",
+      "Sheger Dabo",
       "Soft crumb"
     ],
     "link": "/product/bread-fresh",

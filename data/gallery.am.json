@@ -2,22 +2,22 @@
   {
     "id": "march",
     "image": "assets/gallery/images/march-8.JPG",
-    "caption": "የሴቶች ቀን በሽገር ዳቦ ተክበረ ከእንስት ሰራቶኞቹጋር ",
-    "alt": "march-8",
-    "date": "3-7-2018"
+    "caption": "የሴቶች ቀን (ማርች 8) በሸገር ዳቦ እና ዱቄት ፋብሪካ ከእንስት ሰራተኞቻችን ጋር በድምቀት ተከበረ።",
+    "alt": "የሸገር ዳቦ እና ዱቄት ፋብሪካ የሴቶች ቀን በዓል አከባበር",
+    "date": "መጋቢት 8፣ 2026"
   },
   {
-    "id": "march",
+    "id": "yetsidatken",
     "image": "assets/gallery/images/yetsidatken.JPG",
-    "caption": "Sheger  ",
-    "alt": "march-8",
-    "date": "3-8-2026"
+    "caption": "የትኩስ ሸገር ዳቦ እና ዱቄት የምግብ ደህንነትን የሚያረጋግጥ የፋብሪካ የፅዳት ዘመቻ ቀን።",
+    "alt": "የሸገር ዳቦ ፋብሪካ የፅዳት እና የምግብ ደህንነት ዘመቻ",
+    "date": "መጋቢት 15፣ 2026"
   },
   {
-    "id": "march",
+    "id": "students",
     "image": "assets/gallery/images/students.JPG",
-    "caption": "Sheger selebrated march eight with the employees ",
-    "alt": "march-8",
-    "date": "3-8-2026"
+    "caption": "ተማሪዎች የሸገር ዳቦና ዱቄት ፋብሪካን በመጎብኘት ዘመናዊ የዳቦ ጋጋሪነትን እና የተመጣጠነ ምግብን የተማሩበት መርሃ ግብር።",
+    "alt": "ተማሪዎች የሸገር ዳቦ ፋብሪካን ሲጎበኙ",
+    "date": "መጋቢት 20፣ 2026"
   }
 ]
