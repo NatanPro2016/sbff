@@ -8,7 +8,14 @@
   <link rel="icon" type="image/png" href="assets/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Preload documents for instant opening -->
+  <link rel="prefetch" href="assets/1.jpeg" />
+  <link rel="prefetch" href="assets/IMG_0912.JPG" />
+  <link rel="prefetch" href="assets/broshour.png" />
+
   <link rel="stylesheet" href="css/portal.css" />
 </head>
 
@@ -18,7 +25,7 @@
     <!-- Center Brand Logo & Title -->
     <div class="portal-brand-center">
       <img src="assets/logo.png" alt="Sheger Logo" class="portal-logo" />
-      <h1 class="portal-title">Sheger Bread &amp; Flour </h1>
+      <h1 class="portal-title">Sheger Bread &amp; Flour Factory</h1>
       <p class="portal-subtitle">Quick Links &amp; Documents</p>
     </div>
 
@@ -53,7 +60,7 @@
         Brochure
       </button>
 
-      <button type="button" class="portal-btn" data-img="assets/IMG_0916.JPG" data-title="Contact Us">
+      <button type="button" class="portal-btn" id="btn-contact">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path
@@ -63,13 +70,14 @@
         Contact Us
       </button>
 
-      <button type="button" class="portal-btn portal-btn-gold" id="btn-feedback">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeU2_qk5Pp0dKh7Vq-nMsXXRjS8IXz6IW-e3oED4qL7g9iuDA/viewform"
+        target="_blank" rel="noopener noreferrer" class="portal-btn portal-btn-gold">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
         </svg>
         Give Us Feedback
-      </button>
+      </a>
     </nav>
 
     <!-- Domain Link -->
@@ -78,41 +86,84 @@
     </div>
   </main>
 
-  <!-- Clean Image Popup Modal -->
+  <!-- Clean Image Popup Modal with Loading Spinner (Old Image Never Shown) -->
   <div class="simple-modal" id="img-modal" role="dialog" aria-modal="true">
     <div class="modal-bar">
       <span class="modal-title" id="modal-title"></span>
       <button type="button" class="modal-close-btn" id="modal-close" aria-label="Close">&times;</button>
     </div>
     <div class="modal-img-wrap">
+      <div class="modal-spinner" id="modal-spinner">
+        <div class="spinner-circle"></div>
+        <span>Loading...</span>
+      </div>
       <img src="" alt="" class="modal-img" id="modal-img" />
     </div>
   </div>
 
-  <!-- Clean Feedback Modal -->
-  <div class="simple-modal" id="feedback-modal" role="dialog" aria-modal="true">
-    <div class="feedback-box">
-      <form id="feedback-form">
-        <h3>Give Us Feedback</h3>
-        <p>Tell us about your experience!</p>
+  <!-- Interactive Contact Card Modal with Direct Phone Dial Links -->
+  <div class="simple-modal" id="contact-modal" role="dialog" aria-modal="true">
+    <div class="contact-card">
+      <div class="contact-card-top">
+        <div class="contact-card-brand-row">
+          <img src="assets/logo.png" alt="Sheger Logo" class="contact-card-brand-logo" />
+          <div class="contact-card-brand-text">
+            SHEGER
+            <span class="contact-card-brand-amharic">ሽገር የበለጸገ ስንዴ ዱቄት</span>
+          </div>
+        </div>
+        <h3 class="contact-card-title">CONTACT US</h3>
+      </div>
 
-        <div class="feedback-stars">
-          <button type="button" data-star="1" class="active">&#9733;</button>
-          <button type="button" data-star="2" class="active">&#9733;</button>
-          <button type="button" data-star="3" class="active">&#9733;</button>
-          <button type="button" data-star="4" class="active">&#9733;</button>
-          <button type="button" data-star="5" class="active">&#9733;</button>
+      <div class="contact-card-body">
+        <!-- Contact 1 -->
+        <div class="contact-person">
+          <div class="contact-name">Mintesnot Kasa</div>
+          <div class="contact-role">General Manager</div>
+          <a href="tel:+251957066665" class="contact-phone-link" title="Call Mintesnot Kasa">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            +2519 57 06 66 65
+          </a>
         </div>
 
-        <textarea placeholder="Write your feedback here..." required></textarea>
+        <!-- Contact 2 -->
+        <div class="contact-person">
+          <div class="contact-name">Fitsum Fikru</div>
+          <div class="contact-role">Sales and Marketing Manager</div>
+          <a href="tel:+251978012505" class="contact-phone-link" title="Call Fitsum Fikru">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            +2519 78 01 25 05
+          </a>
+        </div>
 
-        <button type="submit" class="submit-btn">Send Feedback</button>
-      </form>
+        <!-- Contact 3 -->
+        <div class="contact-person">
+          <div class="contact-name">Tison Girma</div>
+          <div class="contact-role">Sales Supervisor</div>
+          <a href="tel:+251981542099" class="contact-phone-link" title="Call Tison Girma">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            +2519 81 54 20 99
+          </a>
+        </div>
+      </div>
 
-      <div class="feedback-done" id="feedback-done">
-        <h4>Thank You!</h4>
-        <p>Your feedback has been received.</p>
-        <button type="button" class="submit-btn" id="feedback-done-close">Close</button>
+      <div class="contact-card-footer">
+        YOUR PARTNER IN QUALITY FLOUR
       </div>
     </div>
   </div>
