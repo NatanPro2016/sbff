@@ -27,14 +27,27 @@ html, body {
 
 body.portal-body {
   font-family: var(--font-base);
-  color: var(--text-light);
-  /* Background covering the entire page with a clean dark-tint overlay */
-  background: linear-gradient(rgba(8, 24, 15, 0.68), rgba(8, 24, 15, 0.76)),
-              url('../assets/look like.jpg') center center / cover no-repeat fixed;
+  color: #1a3b22;
+  background-color: #F6F3EA;
+  /* Light overlay so the background image, all logos and bag are clearly visible */
+  background-image: 
+    linear-gradient(rgba(246, 243, 234, 0.18), rgba(246, 243, 234, 0.28)),
+    url('../assets/look like.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 16px;
+}
+
+@media (max-width: 520px) {
+  body.portal-body {
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
 /* Centered Container that fits 100vh perfectly */
@@ -58,21 +71,21 @@ body.portal-body {
   height: auto;
   margin: 0 auto 6px;
   display: block;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.15));
 }
 
 .portal-title {
   font-size: 1.15rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #0E4324;
   line-height: 1.2;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
 }
 
 .portal-subtitle {
   font-size: 0.76rem;
-  color: var(--brand-gold);
-  font-weight: 600;
+  color: #8C6A1E;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-top: 2px;
@@ -153,16 +166,22 @@ body.portal-body {
 }
 
 .portal-domain-link {
-  color: var(--brand-gold);
+  color: #0E4324;
   font-size: 0.84rem;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 4px;
-  transition: color 0.2s;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 5px 14px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s;
 }
 
 .portal-domain-link:hover {
-  color: #FFFFFF;
+  color: #8C6A1E;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 /* ==========================================================================

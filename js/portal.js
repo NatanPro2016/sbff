@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const imagesToPreload = [
     'assets/1.webp',
     'assets/1.jpeg',
-    'assets/IMG_0912.webp',
-    'assets/IMG_0912.JPG',
+    'assets/IMG_0912-1.webp',
+    'assets/IMG_0912-1.png',
     'assets/broshour.webp',
     'assets/broshour.png',
     'assets/IMG_0916.JPG'
