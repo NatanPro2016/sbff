@@ -58,6 +58,7 @@
   <link rel="stylesheet" href="../css/reset.css" />
   <link rel="stylesheet" href="../css/global.css" />
   <link rel="stylesheet" href="../css/about-us.css" />
+  <link rel="stylesheet" href="../css/certificates.css" />
   <script src="../js/nav.js" defer></script>
 
   <!-- Schema.org JSON-LD Structured Data -->
@@ -109,11 +110,13 @@
         </button>
       </div>
       <div class="nav-actions">
-        <nav class="nav" aria-label="Main navigation">
+        <nav class="nav" aria-label="ዋና አሰሳ">
           <a href="./index.html">መነሻ</a>
           <a href="./about-us.html" class="active">ስለ እኛ</a>
           <a href="./products.html">ምርቶች</a>
           <a href="./gallery.html">ማዕከለ ስዕላት</a>
+          <a href="./certificates.html">ሰርተፊኬቶች</a>
+          <a href="./portal.html">ፈጣን መዳረሻ</a>
         </nav>
         <a href="../about-us.html" class="lang-switch" lang="en" hreflang="en">EN</a>
       </div>
@@ -186,6 +189,66 @@
         ቡድናችን ከከተማ አስተዳደርና ከሌሎች አጋሮች ጋር በመስራት ምርትን በተረጋጋ ሁኔታ ለማቅረብ ይጥራል።
       </p>
     </section>
+  
+    <!-- Accredited Standards & Quality Awards Showcase -->
+    <section class="about-cert-showcase" id="certifications">
+      <div class="about-cert-grid">
+        <div class="about-cert-copy">
+          <span class="badge-pill" style="display: inline-block; background: var(--primary-soft); color: var(--primary); padding: 5px 14px; border-radius: 20px; font-weight: 700; font-size: 0.82rem; margin-bottom: 10px;">ዓለም አቀፍ ደረጃዎች</span>
+          <h2>የተረጋገጠ የምግብ ደህንነት እና የጥራት ቁጥጥር</h2>
+          <p>
+            በሸገር ዳቦ እና ዱቄት ፋብሪካ የምግብ ደህንነት እና ከፍተኛ ጥራት ቃል ብቻ አይደሉም—በአለም አቀፍ ደረጃ የተረጋገጡ ናቸው። በኢትዮጵያ የተስማሚነት ምዘና ድርጅት (ECAE) እና በዓለም አቀፍ የዕውቅና ፎረም (IAF) ዕውቅና የተሰጣቸው አራት ይፋዊ የ ISO ሰርተፊኬቶች ባለቤት ነን፡
+          </p>
+          <div class="about-cert-badges-list">
+            <div class="about-cert-badge-item">
+              <span>🛡️</span> ISO 22000:2018 (የምግብ ደህንነት)
+            </div>
+            <div class="about-cert-badge-item">
+              <span>⭐</span> ISO 9001:2015 (የጥራት አስተዳደር)
+            </div>
+            <div class="about-cert-badge-item">
+              <span>🌿</span> ISO 14001:2015 (የአካባቢ ጥበቃ)
+            </div>
+            <div class="about-cert-badge-item">
+              <span>👷</span> ISO 45001:2018 (የሙያ ጤና እና ደህንነት)
+            </div>
+          </div>
+          <a href="./certificates.html" class="btn btn-primary">
+            ሁሉንም ይፋዊ ሰርተፊኬቶች ይመልከቱ &rarr;
+          </a>
+        </div>
+        <div class="about-cert-cards-preview">
+          <a href="./certificates.html" class="about-cert-mini-card" title="ISO 22000 የምግብ ደህንነት ሰርተፊኬት">
+            <picture>
+              <source srcset="../assets/certificates/iso-22000-food-safety-thumb.webp" type="image/webp" />
+              <img src="../assets/certificates/iso-22000-food-safety.jpg" alt="ISO 22000 የምግብ ደህንነት ሰርተፊኬት" loading="lazy" />
+            </picture>
+            <div class="about-cert-mini-label">ISO 22000 የምግብ ደህንነት</div>
+          </a>
+          <a href="./certificates.html" class="about-cert-mini-card" title="ISO 9001 የጥራት አስተዳደር ሰርተፊኬት">
+            <picture>
+              <source srcset="../assets/certificates/iso-9001-quality-management-thumb.webp" type="image/webp" />
+              <img src="../assets/certificates/iso-9001-quality-management.jpg" alt="ISO 9001 የጥራት ሰርተፊኬት" loading="lazy" />
+            </picture>
+            <div class="about-cert-mini-label">ISO 9001 የጥራት አስተዳደር</div>
+          </a>
+          <a href="./certificates.html" class="about-cert-mini-card" title="ISO 14001 የአካባቢ ጥበቃ ሰርተፊኬት">
+            <picture>
+              <source srcset="../assets/certificates/iso-14001-environmental-management-thumb.webp" type="image/webp" />
+              <img src="../assets/certificates/iso-14001-environmental-management.jpg" alt="ISO 14001 የአካባቢ ጥበቃ ሰርተፊኬት" loading="lazy" />
+            </picture>
+            <div class="about-cert-mini-label">ISO 14001 አካባቢ</div>
+          </a>
+          <a href="./certificates.html" class="about-cert-mini-card" title="ISO 45001 የሙያ ደህንነት ሰርተፊኬት">
+            <picture>
+              <source srcset="../assets/certificates/iso-45001-occupational-health-safety-thumb.webp" type="image/webp" />
+              <img src="../assets/certificates/iso-45001-occupational-health-safety.jpg" alt="ISO 45001 የሙያ ደህንነት ሰርተፊኬት" loading="lazy" />
+            </picture>
+            <div class="about-cert-mini-label">ISO 45001 ደህንነት</div>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -205,6 +268,8 @@
             <a href="./about-us.html">ስለ እኛ</a>
             <a href="./products.html">ምርቶች</a>
             <a href="./gallery.html">ማዕከለ ስዕላት</a>
+            <a href="./certificates.html">ሰርተፊኬቶች</a>
+            <a href="./portal.html">ፈጣን መዳረሻ እና መረጃ</a>
           </div>
           <div>
             <h4>እገዛ</h4>

@@ -80,6 +80,25 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Certificates & Quality Awards -->
+  <url>
+    <loc>https://shegerbread.com/certificates.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shegerbread.com/certificates.html" />
+    <xhtml:link rel="alternate" hreflang="am" href="https://shegerbread.com/am/certificates.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shegerbread.com/certificates.html" />
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://shegerbread.com/am/certificates.html</loc>
+    <xhtml:link rel="alternate" hreflang="am" href="https://shegerbread.com/am/certificates.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://shegerbread.com/certificates.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shegerbread.com/certificates.html" />
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
   <!-- Portal & Quick Access Page -->
   <url>
     <loc>https://shegerbread.com/portal.html</loc>
